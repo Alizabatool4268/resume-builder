@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>resume-builder</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li class="logo">Resume builder</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buildresume.html">Build Resume</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li class="theme" onclick="changeTheme()" ondblclick="dafaultTheme()">Theme</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="main-heading">
+        <h1>Are you ready to build your Resume</h1>
+        <h4>Here is a sample resume you can view </h4>
+        </div>
+    <!-- <div class="sample-resume"> -->
+        <section class= "sample-resume">
+            <div id="image"></div>
+            <ul>
+                <li>Aliza Batool</li>
+                <li>alizzab2007@gmail.com</li>
+                <li>03118313166</li>
+            </ul>
+        </section>
+        <section>
+            <div class="about-me">
+                <h2>About Me</h2>
+            <p>
+                As an aspiring web developer, my journey in the world of technology began in 2024<br>
+                when I joined the GIAIC program, which focuses on Web 3.0 and the metaverse.<br>
+                Since then, I have been actively developing my skills in frontend development,<br> 
+                particularly in HTML, CSS, TypeScript, and Next.js. Currently, I am pursuing my<br>
+                studies as a senior student at GIAIC, where I continue to expand my knowledge and<br>
+                expertise through various milestone-based projects. This experience has not only <br>
+                strengthened my technical abilities but also deepened my passion for building responsive<br> 
+                and dynamic web applications.
+            </p>
+           </div>
+        </section> 
+        <section class="education-sec">
+           <div class="Education">
+                <h2>Education</h2>
+            <article>
+                I am currently in my first year of studies, pursuing a medical <br>
+                While my academic focus lies in the medical field, my passion for web development<br>
+                has been a significant part of my personal and professional growth. My dedication<br> 
+                to both disciplines showcases my adaptability and commitment to continuous learning.<br>
+                In my matriculation, I successfully secured an A+ grade, reflecting my <br>
+                strong academic foundation and drive for excellence.<br>
+            </article>
+           </div>
+        </section> 
+        <section>
+           <div class="skills">
+                <h2>skills</h2>
+            <p>
+                As an aspiring web developer, I have dedicated myself to learning a range <br>
+                of essential frontend technologies. I have gained proficiency in HTML,<br>
+                CSS, TypeScript, and JavaScript, which have provided me with a strong<br>
+                foundation in creating clean, responsive, and user-friendly websites.<br>
+                Currently, I am enhancing my skill set by learning Next.js, a powerful <br>
+                framework for building dynamic and interactive web pages. This ongoing <br>
+                journey has allowed me to understand both static and dynamic web development,<br>
+                and I am continuously expanding my knowledge to stay up-to-date with<br>
+                modern industry practices.
+            </p>
+        </div>
+        </section> 
+        <section class="sec-exp">
+            <div class="Experience">
+                <h2>Experience</h2>
+                <article>
+                    Though I am a fresher with no formal work experience, I have built several <br>
+                    significant projects that demonstrate my technical skills, problem-solving<br>
+                    abilities, and passion for web development:<br>
+        
+                    <br> <big>Command Line Calculator</big> <br>
+                    This project is a functional, command-line-based calculator built using TypeScript <br>
+                    and JavaScript. It allows users to perform basic arithmetic operations with a focus <br>
+                    on delivering a simple yet efficient user experience.Building this calculator<br>
+                    helped me understand the fundamentals of programing.
+
+                    <br> <big> Command Line Number Guessing Game</big> <br>
+                    Designed an interactive number guessing game entirely based on command-line inputs. <br>
+                    This game generates a random number, challenging users to guess it within a limited <br>
+                    number of attempts. Through this project, I gained experience with control flow, <br>
+                    randomization logic, and user interaction design, all of which improved my skills in <br>
+                    building engaging user experiences.
+        
+                    <br> <big>E-Commerce Website</big> <br>
+                    Developed a fully functional and responsive e-commerce website using HTML, CSS, <br>
+                    and JavaScript. This website includes product listings, shopping cart functionalities,<br>
+                    and checkout options. I focused on clean design and smooth user navigation.
+                </article> 
+            </div>
+        </section>
+        <div class="toggle-button"><button class="hide" onclick="hide()" ondblclick="show()">Toggle Experience</button></div>
+    <!-- </div> -->
+    </main>
+    <footer>
+      <ul>
+        <li>Help</li>
+        <li>Blogs</li>
+        <li>Templates</li>
+        <li>Trending Templates</li>
+        <li>Suggestions</li>
+        <li>How to use</li>
+      </ul>
+      <ul>
+        <li>More Info</li>
+        <li>Rights reserved</li>
+        <li>contact us</li>
+        <li>Trending Templates</li>
+        <li>posts</li>
+        <li>Connect</li>
+      </ul>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
