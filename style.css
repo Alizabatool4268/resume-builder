@@ -252,6 +252,10 @@ big{
     .Experience article{
         font-size: 0.8rem;
     }
+    #image{
+        height: 20svh;
+        width: 40svw;
+    }
     .Education article{
         font-size:0.8rem;
     }
