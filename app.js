@@ -14,6 +14,8 @@ function show() {
     var showExperience = document.getElementsByClassName("sec-exp")[0];
     showExperience.style.display = "block";
 }
+var names = document.getElementById("resume-name");
+var emails = document.getElementById("resume-email");
 function generateCv() {
     var name = document.getElementById("resume-name");
     var temName = document.getElementById("resume-name-tem");
@@ -39,3 +41,11 @@ function generateCv() {
     var showtem = document.getElementById("template");
     showtem.style.display = "flex";
 }
+var shareResumeButton = document.getElementById("share-url");
+shareResumeButton.addEventListener('click', function () {
+    var baseUrl = window.location.href;
+    var resumeId = btoa("".concat(names.value, "-").concat(emails.value));
+    var shareableUrl = "".concat(baseUrl, "?resumeId=").concat(resumeId);
+    alert("Your unique resume URL: ".concat(shareableUrl));
+    navigator.clipboard.writeText(shareableUrl); // Copy the URL to clipboard
+});

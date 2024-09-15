@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> -->
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>resume-builder</title>
 </head>
 <body>
     <header>
@@ -20,6 +21,7 @@
         </div>
     </header>
     <main>
+
         <div id="resume">
             <input type="text" name="name" placeholder="your name" id="resume-name" required>
             <input type="email" name="name" placeholder="your email" id="resume-email" required>
@@ -30,7 +32,7 @@
             <textarea name="achievements" placeholder="your achivements " id="achievements-resume" required></textarea>
             <button type="submit" class="submit-button-resume" onclick="generateCv()">Generate CV</button>
         </div>
-        
+
         <div id="template">
             <h2>Resume</h2>
             <div id="profile-pic-tem"></div>
@@ -58,10 +60,7 @@
             <hr>
             <h2>Experience</h2>
             <div id="Experience-resume-tem">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, ea vitae voluptate necessitatibus
-                 facere nam temporibus laborum! Voluptate ipsa quam consequatur debitis ex, adipisci unde, velit,
-                 reprehenderit cupiditate laborum doloremque Sit repellendus nihil reiciendis mollitia tempore 
-                 perspiciatis nostrum architecto eum quidem quos a aspernatur
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, ea vitae voluptate    
             </div>
             <hr>
             <h2>skills</h2>
@@ -74,7 +73,10 @@
                 illum amet, quam impedit voluptas velit, voluptatum et voluptatibus nulla eiecusandae!
             </div>
             <hr>
+            <button type="button" id="share-url">share</button>
+            <button type="button" id="download-button" onclick="generatePDF()">Download PDF</button>
         </div>
+
     </main>
     <script src="app.js"></script>
 </body>

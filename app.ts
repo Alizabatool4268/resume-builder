@@ -14,7 +14,9 @@ function show(){
 const showExperience = document.getElementsByClassName("sec-exp")[0] as HTMLBodyElement
 showExperience.style.display="block"
 }
-function generateCv() {
+const names = document.getElementById("resume-name") as HTMLInputElement;
+const emails = document.getElementById("resume-email") as HTMLInputElement;
+function generateCv(){
   const name = document.getElementById("resume-name") as HTMLInputElement;
   const temName = document.getElementById("resume-name-tem") as HTMLElement;
   temName.innerText = name.value;
@@ -46,3 +48,14 @@ function generateCv() {
   const showtem = document.getElementById("template") as HTMLDivElement;
   showtem.style.display = "flex";
 }
+
+const shareResumeButton = document.getElementById("share-url") as HTMLButtonElement;
+
+shareResumeButton.addEventListener('click', () => {
+  const baseUrl = window.location.href;
+  const resumeId = btoa(`${names.value}-${emails.value}`);
+  const shareableUrl = `${baseUrl}?resumeId=${resumeId}`;
+
+  alert(`Your unique resume URL: ${shareableUrl}`);
+  navigator.clipboard.writeText(shareableUrl);  // Copy the URL to clipboard
+});

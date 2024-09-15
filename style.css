@@ -308,7 +308,7 @@ big{
     border-radius: 10px;
   }
   #template{
-    height: 100%;
+    height:inherit;
     width:100% ;
     text-align:center;
     display:none;
@@ -383,6 +383,13 @@ h2{
     color: #ffffff;
     mix-blend-mode: difference;
     padding-top: 5px;
+  }
+  .download-button{
+     height: 2rem;
+     width: 7rem;
+  }
+  hr{
+    width:100%;
   }
 
 
