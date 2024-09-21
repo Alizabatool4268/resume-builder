@@ -231,23 +231,6 @@ big{
     box-shadow: 0px 0px 2px 0.5px #000000;
     background: linear-gradient(#9932cc, #ffffff);
   }
-  footer{
-    height: 50vh;
-    width: 100%;
-    background-color: #d8afff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  footer ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    list-style-type: none;
-    align-items: center;
-    margin-left: 3rem;
-  }
   #resume{
     height: 100vh;
     width: 100%;
@@ -391,8 +374,46 @@ h2{
   hr{
     width:100%;
   }
+  /* share and download button */
+  #share-url{
+    height: 1.5rem;
+    width: 5rem;
+    margin-top: 6px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #d8afff;
+    border: none;
+  }
+  
+  #download-button{
+    height: 1.5rem;
+    width: 8rem;
+    margin-top: 6px;
+    margin-bottom: 7px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #d8afff;
+    border: none;
 
-
+  }
+  
+  footer{
+    height: 40vh;
+    width: 100%;
+    background-color: #d8afff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  footer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    align-items: center;
+    margin-left: 3rem;
+  }
   @media (min-width:400px) and (max-width:540px ) {
     .Experience article{
         font-size: 0.8rem;

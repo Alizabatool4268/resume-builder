@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> -->
     <link rel="stylesheet" href="style.css">
     <title>resume-builder</title>
 </head>
@@ -30,7 +29,7 @@
             <textarea name="experience" placeholder="your Experience" id="Experience-resume" required></textarea>
             <textarea name="skills" placeholder="your skills " id="skills-resume" required></textarea>
             <textarea name="achievements" placeholder="your achivements " id="achievements-resume" required></textarea>
-            <button type="submit" class="submit-button-resume" onclick="generateCv()">Generate CV</button>
+            <button type="submit" class="submit-button-resume" onclick="generateCv()">Generate</button>
         </div>
 
         <div id="template">
@@ -39,7 +38,7 @@
             <hr>
             <h2>Name</h2>
             <div id="resume-name-tem">
-                 Lorem maxime quisquam eum corporis hic
+                Lorem maxime quisquam eum corporis hic
             </div>
             <hr>
             <h2>Email</h2>
@@ -54,13 +53,13 @@
             <hr>
             <h2>About</h2>
             <div id="About-resume-tem">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quo sint. Dolore similique 
-               veniam deleniti quasi animi, delectus voluptas consectet.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quo sint. Dolore similique
+                veniam deleniti quasi animi, delectus voluptas consectet.
             </div>
             <hr>
             <h2>Experience</h2>
             <div id="Experience-resume-tem">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, ea vitae voluptate    
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, ea vitae voluptate
             </div>
             <hr>
             <h2>skills</h2>
@@ -74,10 +73,11 @@
             </div>
             <hr>
             <button type="button" id="share-url">share</button>
-            <button type="button" id="download-button" onclick="generatePDF()">Download PDF</button>
+            <button type="button" id="download-button">Download PDF</button>
         </div>
 
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app.js"></script>
 </body>
 </html>
